@@ -3,10 +3,7 @@ BMP Editor is a program to add simple filters to BMP images. The program runs wi
 
 ***
 
-To compile:  
-<p align="center">`make`  
-or  
-`gcc -o nameOfOutputFile bmpedit.c`</p>
+To compile: `make`  or  `gcc -o nameOfOutputFile bmpedit.c`
 
 ##### To run the file after compilation you will have to follow the command line format given below
 Suppose the output file of the program is called bmpedit<br/>
@@ -25,26 +22,14 @@ Option | Function
 `-m` | mirror effect
 `-e` | edge detection
 `-h` | help
-<br/>
-##### For example, these are valid command line arguments...
+  
+##### For example, these are some valid command line arguments.
 
 * `./bmpedit -t 0.5 -o hulkth.bmp hulk.bmp`
 * `./bmpedit -i -o hulki.bmp hulk.bmp`
 * `./bmpedit -m -o hulk.bmp hulk.bmp`
 * `./bmpedit -e -o hulke.bmp hulk.bmp`
 * `./bmpedit -h`
-
-##### ...and these are not
-Command line argument| Reason
----------------------|--------
-`./bmpedit -t -o hulkt.bmp hulk.bmp` | Threshold value not specified
-`./bmpedit -o cupth.bmp hulki.bmp -i hulk.bmp` | Order Matters! 
-`./bmpedit -m hulk.bmp` | Output file name and argument not specified
-`./bmpedit -e -o hulk.bmp` | Output file name not specified
-
-<br/>
-
-***
 
 ### A Summary of the Program's Working
 
